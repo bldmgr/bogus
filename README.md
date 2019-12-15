@@ -9,18 +9,15 @@ Of course, I wanted to know how Docker generates these container names because I
 
 **Example**:
 
-    ```bash
     $ git clone https://github.com/bldmgr/bogus.git
     $ git status
     On branch master
     Your branch is up to date with 'origin/master'.
 
     nothing to commit, working tree clean
-    ```
 
-    ```bash
+
     $ bogus
     $ git status
     On branch fervent_lamarr
     nothing to commit, working tree clean
-    ```
