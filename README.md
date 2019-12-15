@@ -15,8 +15,6 @@ Of course, I wanted to know how Docker generates these container names because I
     Your branch is up to date with 'origin/master'.
 
     nothing to commit, working tree clean
-
-
     $ bogus
     $ git status
     On branch fervent_lamarr
