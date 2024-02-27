@@ -1,13 +1,9 @@
 version: 2.1
 
-orbs:
-  go: circleci/go@1.11.0
-
 jobs:
   build:
-    executor:
-      name: go/default
-      tag: '1.21.4'
+    docker:
+      - image: cimg/go:1.22.0
     steps:
       - checkout
       - run:
