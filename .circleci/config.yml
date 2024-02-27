@@ -1,20 +1,18 @@
 version: 2.1
 
+orbs:
+  go: circleci/go@1.11.0
+
 jobs:
   build:
-    docker:
-      - image: cimg/go:1.17.12
+    executor:
+      name: go/default
+      tag: '1.21.4'
     steps:
       - checkout
-      - setup_remote_docker:
-          docker_layer_caching: false
       - run:
           name: linux AMD
-          command: |
-                   mkdir /tmp/artifacts;
-                   go build -o /tmp/artifacts/bogus .
-      - store_artifacts:
-          path: /tmp/artifacts
+          command: go build -o bogus .
 
 workflows:
   circleci-logs-build:
