@@ -5,9 +5,8 @@ orbs:
 
 jobs:
   build:
-    executor:
-      name: go/default
-      tag: '1.21.4'
+    machine: # executor type
+      image: default
     steps:
       - checkout
       - run:
