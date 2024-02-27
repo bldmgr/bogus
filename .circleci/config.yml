@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     machine: # executor type
-      image: default
+      image: prod-default
     steps:
       - checkout
       - run:
