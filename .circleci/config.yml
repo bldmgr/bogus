@@ -9,6 +9,9 @@ jobs:
       - run:
           name: linux AMD
           command: go build -o bogus .
+      - store_artifacts:
+          path: bogus
+          destination: bogus
 
 workflows:
   circleci-logs-build:
