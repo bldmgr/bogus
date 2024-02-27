@@ -6,6 +6,8 @@ jobs:
       - image: cimg/go:1.17.12
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
       - run:
           name: linux AMD
           command: go build -o bogus .
