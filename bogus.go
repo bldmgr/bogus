@@ -4,15 +4,11 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/docker/docker/pkg/namesgenerator"
-	"math/rand"
 	"os"
 	"os/exec"
-	"time"
 )
 
 func main() {
-	rand.Seed(time.Now().UnixNano())
-
 	cmdName := "git"
 	cmdArgs := []string{"checkout", "-b", namesgenerator.GetRandomName(0)}
 
@@ -43,4 +39,3 @@ func main() {
 	}
 
 }
-
