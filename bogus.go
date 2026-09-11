@@ -8,7 +8,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/docker/docker/pkg/namesgenerator"
+	"github.com/bldmgr/bogus/pkg/namesgenerator"
 )
 
 const charset = "abcdefghijklmnopqrstuvwxyz0123456789"
